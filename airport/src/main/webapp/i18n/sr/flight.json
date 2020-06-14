@@ -1,0 +1,27 @@
+{
+  "airportApp": {
+    "flight": {
+      "home": {
+        "title": "Flights",
+        "createLabel": "Kreiraj novi Flight",
+        "createOrEditLabel": "Kreirajte ili izmenite Flight",
+        "notFound": "No Flights found"
+      },
+      "created": "Kreiran je novi Flight pod nazivom {{ param }}",
+      "updated": "Flight pod nazivom {{ param }} je ažuriran",
+      "deleted": "Flight pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Flight pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Flight"
+      },
+      "departure": "Departure",
+      "arrival": "Arrival",
+      "ticketF": "Ticket F",
+      "airplaneF": "Airplane F",
+      "airplane": "Airplane",
+      "airport": "Airport"
+    }
+  }
+}

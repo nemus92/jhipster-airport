@@ -1,0 +1,23 @@
+{
+  "airportApp": {
+    "ticket": {
+      "home": {
+        "title": "Tickets",
+        "createLabel": "Kreiraj novi Ticket",
+        "createOrEditLabel": "Kreirajte ili izmenite Ticket",
+        "notFound": "No Tickets found"
+      },
+      "created": "Kreiran je novi Ticket pod nazivom {{ param }}",
+      "updated": "Ticket pod nazivom {{ param }} je ažuriran",
+      "deleted": "Ticket pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Ticket pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Ticket"
+      },
+      "passenger": "Passenger",
+      "flight": "Flight"
+    }
+  }
+}

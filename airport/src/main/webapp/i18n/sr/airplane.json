@@ -1,0 +1,23 @@
+{
+  "airportApp": {
+    "airplane": {
+      "home": {
+        "title": "Airplanes",
+        "createLabel": "Kreiraj novi Airplane",
+        "createOrEditLabel": "Kreirajte ili izmenite Airplane",
+        "notFound": "No Airplanes found"
+      },
+      "created": "Kreiran je novi Airplane pod nazivom {{ param }}",
+      "updated": "Airplane pod nazivom {{ param }} je ažuriran",
+      "deleted": "Airplane pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Airplane pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Airplane"
+      },
+      "code": "Code",
+      "flightAirplane": "Flight Airplane"
+    }
+  }
+}

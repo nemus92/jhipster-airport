@@ -1,0 +1,27 @@
+{
+  "airportApp": {
+    "passenger": {
+      "home": {
+        "title": "Passengers",
+        "createLabel": "Kreiraj novi Passenger",
+        "createOrEditLabel": "Kreirajte ili izmenite Passenger",
+        "notFound": "No Passengers found"
+      },
+      "created": "Kreiran je novi Passenger pod nazivom {{ param }}",
+      "updated": "Passenger pod nazivom {{ param }} je ažuriran",
+      "deleted": "Passenger pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Passenger pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Passenger"
+      },
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phoneNumber": "Phone Number",
+      "ticketP": "Ticket P",
+      "ticket": "Ticket"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="airportApp.flight.home.title">Flights</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-flight" [routerLink]="['/flight/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span  jhiTranslate="airportApp.flight.home.createLabel">
+            Create a new Flight
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="flights?.length === 0">
+        <span jhiTranslate="airportApp.flight.home.notFound">No flights found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="flights && flights.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+                    <th scope="col" ><span jhiTranslate="airportApp.flight.departure">Departure</span></th>
+                    <th scope="col" ><span jhiTranslate="airportApp.flight.arrival">Arrival</span></th>
+                    <th scope="col" ><span jhiTranslate="airportApp.flight.airplaneF">Airplane F</span></th>
+                    <th scope="col" ><span jhiTranslate="airportApp.flight.airplane">Airplane</span></th>
+                    <th scope="col" ><span jhiTranslate="airportApp.flight.airport">Airport</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let flight of flights ;trackBy: trackId">
+                    <td><a [routerLink]="['/flight', flight.id, 'view']">{{ flight.id }}</a></td>
+                    <td>{{ flight.departure | date:'medium' }}</td>
+                    <td>{{ flight.arrival | date:'medium' }}</td>
+                    <td>
+                        <div *ngIf="flight.airplaneF">
+                            <a [routerLink]="['/airplane', flight.airplaneF?.id, 'view']" >{{ flight.airplaneF?.id }}</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div *ngIf="flight.airplane">
+                            <a [routerLink]="['/airplane', flight.airplane?.id, 'view']" >{{ flight.airplane?.id }}</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div *ngIf="flight.airport">
+                            <a [routerLink]="['/airport', flight.airport?.id, 'view']" >{{ flight.airport?.id }}</a>
+                        </div>
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/flight', flight.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/flight', flight.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(flight)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

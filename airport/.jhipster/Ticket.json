@@ -1,0 +1,30 @@
+{
+  "name": "Ticket",
+  "fields": [],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "passenger",
+      "otherEntityRelationshipName": "ticket",
+      "relationshipName": "passenger"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "flight",
+      "otherEntityRelationshipName": "ticketF",
+      "relationshipName": "flight",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200614090911",
+  "entityTableName": "ticket",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

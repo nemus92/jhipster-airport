@@ -1,0 +1,24 @@
+{
+  "airportApp": {
+    "airport": {
+      "home": {
+        "title": "Airports",
+        "createLabel": "Kreiraj novi Airport",
+        "createOrEditLabel": "Kreirajte ili izmenite Airport",
+        "notFound": "No Airports found"
+      },
+      "created": "Kreiran je novi Airport pod nazivom {{ param }}",
+      "updated": "Airport pod nazivom {{ param }} je ažuriran",
+      "deleted": "Airport pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Airport pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Airport"
+      },
+      "name": "Name",
+      "location": "Location",
+      "flightAirport": "Flight Airport"
+    }
+  }
+}

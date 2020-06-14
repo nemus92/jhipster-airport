@@ -1,0 +1,42 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.myairport",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.9.1",
+    "applicationType": "monolith",
+    "baseName": "airport",
+    "packageName": "com.myairport",
+    "packageFolder": "com/myairport",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NGNiOTdmY2U0YTYwZjI3ODgwZDMxYzk5N2ExNDVmMGNjN2VmZGZkNGQxMTcwMDUwYTZhZjJhZDljZTcxYjEyY2ZkZmJlYjRhNTUzYzQ1NmM5MzcxNWY4ZDRlNTA5ZWEyNmE2ZjhiY2FlOTMwMWMwZTgzYTk1OWZiMzAzZWM5OWY=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1592124596447,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "sr"],
+    "blueprints": []
+  }
+}
